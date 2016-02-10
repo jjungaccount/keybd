@@ -1,5 +1,5 @@
 <div id="p-wrapper">
-  <ul id="piano">
+  <ul id="piano" onclick="paintIt(this, '#990000')"> 
     <li><div class="anchor"></div></li>
     <li><div class="anchor"></div><span></span></li>
     <li><div class="anchor"></div><span></span></li>
@@ -9,6 +9,13 @@
     <li><div class="anchor"></div><span></span></li>
   </ul>
 </div>
+
+<script>
+  var el = document.getElementById("piano")
+  el.addEventListener("click", function() {
+    <% keybd = Piano.play("A") %>
+  });
+</script>
 
 <div class="credit">
   <strong>Pure CSS3 Piano by Taufik Nurrohman</strong><br />

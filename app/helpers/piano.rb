@@ -3,8 +3,8 @@ class Piano
 
   attr_reader :session
 
-  def initialize(session)
-    @session = session
+  def initialize(note)
+    @note = note
     @lastnote = ""
   end
 
@@ -26,11 +26,6 @@ class Piano
 
 end
 
-keybd = Piano.new("Session #1")
 
-keybd.play("C")
-keybd.play("G")
-keybd.play("D")
-keybd.play("A")
-keybd.play("Bb")
+
 
