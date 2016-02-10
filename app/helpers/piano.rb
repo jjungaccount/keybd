@@ -3,8 +3,7 @@ class Piano
 
   attr_reader :session
 
-  def initialize(note)
-    @note = note
+  def initialize()
     @lastnote = ""
   end
 
