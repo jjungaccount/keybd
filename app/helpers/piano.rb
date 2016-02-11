@@ -25,6 +25,3 @@ class Piano
 
 end
 
-
-
-
