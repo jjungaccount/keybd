@@ -1,22 +1,15 @@
+
 <div id="p-wrapper">
   <ul id="piano"> 
-    <li><div class="anchor"></div></li>
-    <li><div class="anchor"></div><span></span></li>
-    <li><div class="anchor"></div><span></span></li>
-    <li><div class="anchor"></div></li>
-    <li><div class="anchor"></div><span></span></li>
-    <li><div class="anchor"></div><span></span></li>
-    <li><div class="anchor"></div><span></span></li>
+    <li><div onmousedown="PlayNote('C')" class="anchor"></div></li>
+    <li><div onmousedown="PlayNote('D')" class="anchor"></div><span onmousedown="PlayNote('C#')"></span></li>
+    <li><div onmousedown="PlayNote('E')" class="anchor"></div><span onmousedown="PlayNote('D#')"></span></li>
+    <li><div onmousedown="PlayNote('F')" class="anchor"></div></li>
+    <li><div onmousedown="PlayNote('G')" class="anchor"></div><span onmousedown="PlayNote('F#')"></span></li>
+    <li><div onmousedown="PlayNote('A')" class="anchor"></div><span onmousedown="PlayNote('G#')"></span></li>
+    <li><div onmousedown="PlayNote('B')" class="anchor"></div><span onmousedown="PlayNote('A#')"></span></li>
   </ul>
 </div>
-
-<script>
-  var el = document.getElementById("piano")
-  el.addEventListener("click", function() {
-    <% keybd = Piano.new %>
-    <% keybd.play("C") %>
-  });
-</script>
 
 <div class="credit">
   <strong>Pure CSS3 Piano by Taufik Nurrohman</strong><br />

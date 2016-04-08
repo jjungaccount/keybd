@@ -1,7 +1,3 @@
-
-//submit button
-$("#piano").on("click", function() {
-
-  console.log("test");
-
-});
+  function PlayNote(note) {
+    console.log(note);
+  };
